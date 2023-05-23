@@ -14,9 +14,14 @@ prod1.price = 100;
 prod1.discount = 20; 
 prod2.price = 200; 
 prod2.discount = 10;
-int actual_price=prod2.sell(); //Mehtod Calling
+prod3.price = 2000; 
+prod3.discount = 100;
+
+prod3.sell();
+int actual_price=prod2.sell(); //Method Calling
 System.out.println("Actual price is" +actual_price);
 prod1.sell(); //Method Calling Statement
+
 prod2.bill();
 shop.clean();
 
