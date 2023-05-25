@@ -16,7 +16,7 @@ public static void main(String [] args)
 
 Bike shine   = new Bike(); //new allocates memory
 Bike activa  = new Bike();
- unicorn = new Bike();
+Bike unicorn = new Bike();
 
 shine.price=65000;
 activa.price=80000;
