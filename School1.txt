@@ -1,0 +1,65 @@
+//For encapuslation program, we have to create two classes
+
+
+class School1
+{
+private int salary; 
+// private, protected, public --> fields
+
+public static void main(String[] args)
+{
+School1 teacher = new School1(); 
+teacher.salary = 20000; 
+School1 physics_teacher = new School1(); 
+physics_teacher.salary = 25000;  
+
+System.out.println(teacher.salary);
+teacher.recruit();
+
+
+}
+private void recruit()
+{
+
+System.out.println("Recruitment");
+
+
+}
+void teach()
+{
+
+System.out.println("Teaching");
+
+
+}
+
+
+}
+
+
+
+
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------
+
+//In this class, we are calling the first class School1 to execute the program. Since the keyword is "private" we could not see the output and it will show private access modifier statement.
+
+
+
+class Student
+{
+
+
+public static void main(String[] args)
+{
+
+School1 schoolObj=new School1();
+schoolObj.teach();
+
+
+System.out.println(schoolObj.salary);
+schoolObj.recruit();
+
+}
+
+}
