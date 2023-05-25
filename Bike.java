@@ -1,4 +1,4 @@
-class Honda
+class Bike
 {
 
 //Fields- Global Variables
@@ -14,9 +14,9 @@ public static void main(String [] args)
 
 {
 
-Honda shine   = new Honda(); //new allocates memory
-Honda activa  = new Honda();
-Honda unicorn = new Honda();
+Bike shine   = new Bike(); //new allocates memory
+Bike activa  = new Bike();
+ unicorn = new Bike();
 
 shine.price=65000;
 activa.price=80000;
@@ -28,13 +28,13 @@ unicorn.discount=2.0f;
 activa.buy(125000);  //Method calling statement
 shine.buy(1500000);
 
-Honda.offer();  //class calling
+Bike.offer();  //class calling
 offer();       //direct calling
 shine.offer(); //Object calling
 
 System.out.println(shine.price);
 
-System.out.println(Honda.owner_name);
+System.out.println(Bike.owner_name);
 System.out.println(unicorn.owner_name);
 System.out.println(owner_name);
 
@@ -44,7 +44,7 @@ System.out.println(owner_name);
 void buy(int amount)
 {        //Method local variable
 
-System.out.println("Buying Honda Bike for Rs."+amount);
+System.out.println("Buying Bike Bike for Rs."+amount);  //+ is concardination
 //System.out.println(amount);
 
 }
