@@ -1,0 +1,23 @@
+class Looping 
+{
+
+	public static void main(String[] args) 
+	{
+		int mi=200;
+		int gt=99;
+		
+		if(mi>gt)
+		{
+			System.out.println("MI enter the finals");
+			
+		}
+		else
+		{
+			System.out.println("GT enter the finals");
+		}
+		
+
+	}
+
+}
+
