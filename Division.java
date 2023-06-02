@@ -14,7 +14,7 @@ public class Division
 		{
 			if(no%div==0)
 			{
-				System.out.println("The dvisior is "+div);
+				System.out.println("The divisor is "+div);
 				count=count+1;
 			}
 		div=div+1;
