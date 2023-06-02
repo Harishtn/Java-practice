@@ -1,6 +1,7 @@
 package com.harish;
 
-public class Division {
+public class Division 
+{
 
 	public static void main(String[] args) 
 	
