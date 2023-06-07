@@ -20,7 +20,7 @@ public class Armstrong2
 
 	}
 	 private int armstrong_number(int no) 
-	  {
+	 {
 	    int arm=0;
 	    //double d = Math.pow(no,arm);
 	    while(no>no/2)
@@ -33,6 +33,6 @@ public class Armstrong2
 	    }
 	    return arm;
 	    //System.out.println("The given number is "+arm);
-	  }
+	 }
 
 }
