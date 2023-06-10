@@ -2,7 +2,6 @@ package com.harish;
 
 public class Fibonacci 
 {
-
 	public static void main(String[] args)
 	{
 		Fibonacci fibo=new Fibonacci();
