@@ -17,5 +17,4 @@ public class Reverse
 		System.out.println("The count is "+count);
 		
 	}
-
 }
