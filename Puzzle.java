@@ -23,8 +23,7 @@ public class Puzzle
 			day=day+1;
 			
 		}
-		System.out.println("Total Savings is:"+savings);
-		
+		System.out.println("Total Savings is:"+savings);	
 		
 	}	
 		

@@ -9,7 +9,6 @@ public class Puzzle3
 		plan.minister();
 
 	}
-
 	private void minister() 
 	{
 		int day=1;

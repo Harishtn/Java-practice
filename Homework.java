@@ -15,7 +15,6 @@ public class Homework
 		//plan.h7();
 		
 	}
-	
 	private void h1()
 	{
 		int number=1;

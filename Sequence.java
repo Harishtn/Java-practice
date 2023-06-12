@@ -16,5 +16,4 @@ public class Sequence
 		    no+=2; //2
 		}
 	}
-
 }
