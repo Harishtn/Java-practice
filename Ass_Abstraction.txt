@@ -1,0 +1,64 @@
+//Assignment-1 Program ----> Abstraction
+
+
+package Assignment1;
+
+public abstract class HeadOffice 
+{
+
+
+public void check_accounts(int amount)
+{
+	System.out.println("Amount is "+amount);
+}
+public int pay_tax(int amount)
+{
+	return amount;
+	
+}
+public abstract void receive_Customers();
+
+}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+package Assignment1;
+
+public abstract class Branch_Plan extends HeadOffice
+{
+
+	public static void main(String[] args) 
+	{
+		System.out.println("Main");
+	}
+	public void do_interview()
+	{
+		System.out.println("Interview");
+	}
+	
+}
+
+//------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+package Assignment1;
+
+public class Branch extends Branch_Plan
+{
+
+	public static void main(String[] args) 
+	{
+		Branch branch=new Branch();
+		branch.check_accounts(1000);
+		int amount=branch.pay_tax(2000);
+		System.out.println(amount);
+		branch.do_interview();
+	    
+	}
+	@Override
+	public void receive_Customers() 
+	{
+		System.out.println("Customers");
+		
+	}	
+
+}
