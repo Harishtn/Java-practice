@@ -1,0 +1,85 @@
+//Assignment-1 :  Learning private, default and public Access Modifiers, Creating Package and understanding its usage, Calling Methods with/without arguments.  
+
+
+package bank.chennai;
+
+public class SBI 
+{
+	private String empName="Harish";
+	private String empId="2K20DS10";
+	private static String branch_name = "chennai";
+	public void get_loan(int amount)
+	{
+		System.out.println("Give Loan: "+amount);
+	}
+	public void create_account()
+	{
+		System.out.println("Account Created");
+		
+	}
+	public String getEmpName() 
+	{
+		return empName;
+	}
+	public void setEmpName(String empName) 
+	{
+		this.empName = empName;
+	}
+	public String getEmpId() 
+	{
+		return empId;
+	}
+	public void setEmpId(String empId)
+	{
+		this.empId = empId;
+	}
+	public static String getBranch_name() 
+	{
+		return branch_name;
+	}
+	public static void setBranch_name(String branch_name) 
+	{
+		SBI.branch_name = branch_name;
+	}
+
+}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+package bank.chennai;
+
+class Account_Holder
+{
+	public static void main(String[] args) 
+	{
+		SBI obj=new SBI();
+		System.out.println(obj.getEmpName());
+		System.out.println(obj.getEmpId());
+		System.out.println(obj.getBranch_name());
+		obj.get_loan(30000);
+		obj.create_account();
+		
+	}
+}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+package bank.madurai;
+
+import bank.chennai.SBI;
+
+class Account_Holder_Madurai 
+{
+
+	public static void main(String[] args) 
+	{
+		SBI obj=new SBI();
+		System.out.println(obj.getEmpName());
+		System.out.println(obj.getEmpId());
+		System.out.println(obj.getBranch_name());
+		obj.get_loan(20000);
+		obj.create_account();
+		
+	}
+
+}
