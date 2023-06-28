@@ -1,0 +1,59 @@
+//Expected Understanding: Access Modifiers, Single Inheritance, getter methods, Constructor Overloading
+
+
+package Assignment2;
+
+public class Trainer 
+{
+	String dept="Java", institute="Payilagam";
+	private int salary=10000;
+	public Trainer(String dept, String institute) 
+	{
+		this.dept=dept;
+		this.institute=institute;
+	}
+	public static void main(String[] args) 
+	{
+		Trainer trainerKumar=new Trainer("CSE","SOS");
+		System.out.println(trainerKumar.dept);
+		System.out.println(trainerKumar.institute);
+		System.out.println(trainerKumar.salary);
+		trainerKumar.training();
+
+	}
+	public int getSalary()
+	{
+		return salary;
+		
+	}
+	public void training()
+	{
+		System.out.println("Trainer");
+	}
+
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+package Assignment2;
+
+public class SQLTrainer extends Trainer
+{
+
+	public SQLTrainer(String dept, String institute) 
+	{
+		super(dept, institute);
+		
+	}
+	public static void main(String[] args) 
+	{
+		SQLTrainer ram= new SQLTrainer("SQL","HCL");	
+		ram.training();
+		System.out.println(ram.getSalary());
+		System.out.println(ram.dept);
+		System.out.println(ram.institute);
+
+	}
+
+}
