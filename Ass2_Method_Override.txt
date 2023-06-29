@@ -1,0 +1,106 @@
+//Expected Understanding: Interface, access modifiers, Method Overriding
+
+
+package tamilnadu.chennai;
+
+public interface TrafficRulesChennai
+{
+	String trafficCommisssioner = "Kavin";
+	
+	void goByDieselVehicle();
+	 
+	void goByBicycle();
+
+}
+
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+package tamilnadu.chennai;
+
+public class CommonManInChennai implements TrafficRulesChennai
+{
+
+	public static void main(String[] args)
+	{
+		CommonManInChennai cic=new CommonManInChennai();
+		cic.goByDieselVehicle();
+		cic.goByBicycle();
+		
+	}
+	@Override
+	public void goByDieselVehicle() 
+	{
+		System.out.println("Use Diesel Vehicle");
+		
+	}
+	@Override
+	public void goByBicycle() 
+	{
+		System.out.println("Go by Bicycle");
+		
+	}
+
+}
+
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+package india.newDelhi;
+
+interface TrafficRulesDelhi 
+{
+	String trafficCommisssioner = "Navin";
+	
+	void dontGoByDieselVehicle();
+	
+	void goByBicycle();
+	
+}
+
+
+//------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+package india.newDelhi;
+
+import tamilnadu.chennai.TrafficRulesChennai;
+
+public class CommonManInDelhi implements TrafficRulesDelhi, TrafficRulesChennai
+{
+
+	public static void main(String[] args) 
+	{
+		CommonManInDelhi cid= new CommonManInDelhi();
+		cid.dontGoByDieselVehicle();
+		cid.goByBicycle();
+		cid.goByDieselVehicle();	
+
+	}
+	@Override
+	public void dontGoByDieselVehicle() 
+	{
+		System.out.println("Don't use Diesel Vehicle");
+		
+	}
+	@Override
+	public void goByBicycle() 
+	{
+		System.out.println("Go by Bicycle");
+		
+	}
+	@Override
+	public void goByDieselVehicle() 
+	{
+		System.out.println("Use Diesel Vehicle");
+		
+	}
+
+}
+
+
+
+
+
