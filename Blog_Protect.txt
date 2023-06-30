@@ -1,0 +1,30 @@
+package com.harish;
+
+public class Protect_Encaps
+{
+	    protected void display() 
+	    { 
+	        System.out.println("I love my mom"); 
+	    } 
+	
+}
+
+
+//-----------------------------------------------------------------------------------------------------
+
+
+package Trichy;
+
+import com.harish.*;
+
+public class Protect2_Encaps extends Protect_Encaps
+{
+	   public static void main(String args[]) 
+	   { 
+	      Protect2_Encaps obj = new Protect2_Encaps(); 
+	      obj.display(); 
+	   } 
+	      	
+}
+
+
