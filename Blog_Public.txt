@@ -1,0 +1,29 @@
+package com.harish;
+
+public class Public_Encaps
+{
+
+	public void display() 
+	{ 
+	    System.out.println("Hi, I'm Harish"); 
+	} 
+
+}
+
+//-----------------------------------------------------------------------------------------------
+
+package Trichy;
+
+import com.harish.*;
+
+public class Public2_Encaps 
+{
+	  public static void main(String args[])
+	  {
+	        Public_Encaps obj = new Public_Encaps();
+	        obj.display();
+	  }
+	
+}
+
+
