@@ -5,13 +5,13 @@ package Assignment2;
 
 public abstract class India 
 {
-	String capital = "New Delhi";
+	public static String capital = "New Delhi";
 	
-	abstract void speakLanguage();
+	public abstract void speakLanguage();
 	
-	abstract void eat();
+	public abstract void eat();
 	
-	abstract void dress();
+	public abstract void dress();
 	
 	public India(String primeMinister)
 	{
@@ -60,10 +60,9 @@ public class TamilNadu extends SouthIndia
 	}
 	public static void main(String[] args) 
 	{
-		India tn=new TamilNadu("Harish");
-		SouthIndia si = new TamilNadu(capital);
-		System.out.println(tn.capital);	
-		System.out.println(capital);
+		SouthIndia si = new TamilNadu("Harish");
+		System.out.println(India.capital);	
+		System.out.println(TamilNadu.capital);
 	}
 	@Override
 	void speakLanguage()
@@ -90,8 +89,6 @@ public class TamilNadu extends SouthIndia
 	void livingstyle()
 	{
 		System.out.println("Above Average development");
-	}
-	
-	
+	}	
 
 }
