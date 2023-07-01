@@ -1,0 +1,29 @@
+package com.harish;
+
+public class Single_Inheritance 
+{
+	public void print_one()
+    {
+        System.out.println("Hi");
+    }
+}
+
+//--------------------------------------------------------------------------------
+
+package com.harish;
+
+public class Single2_Inheritance extends Single_Inheritance
+{
+	public static void main(String[] args)
+    {
+        Single2_Inheritance g = new Single2_Inheritance();
+        g.print_one();
+        g.print_two();
+        g.print_one();
+    }
+    public void print_two()
+    { 
+      System.out.println("Harish");
+    }
+}
+
