@@ -1,0 +1,41 @@
+package com.harish;
+
+public class Multilevel_Inheritance 
+{
+	public void print_one()
+    {
+        System.out.println("Hi");
+    }
+}
+
+//----------------------------------------------------------------------------
+
+package com.harish;
+
+public class Multilevel2_Inheritance extends Multilevel_Inheritance
+{
+	public void print_two()
+    {
+        System.out.println("Family");
+    }
+}
+
+//----------------------------------------------------------------------------
+
+package com.harish;
+
+public class Multilevel3_Inheritance extends Multilevel2_Inheritance
+{
+	public static void main(String[] args)
+    {
+		Multilevel3_Inheritance g = new Multilevel3_Inheritance();
+        g.print_one();
+        g.print_two();
+        g.print_three();
+    }
+    public void print_three()
+    { 
+      System.out.println("Harish");
+    }
+}
+
