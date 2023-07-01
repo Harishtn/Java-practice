@@ -1,0 +1,60 @@
+package com.harish;
+
+public class Hierarchical_Inheritance
+{
+	public void print_A() 
+    { 
+       System.out.println("Class A"); 
+    }
+}
+
+//------------------------------------------------------------------------------------
+
+package com.harish;
+
+public class Hierarchical2_Inheritance extends Hierarchical_Inheritance
+{
+	public void print_B() 
+    {
+       System.out.println("Class B"); 
+    }
+}
+
+//-------------------------------------------------------------------------------------
+
+package com.harish;
+
+public class Hierarchical3_Inheritance extends Hierarchical_Inheritance
+{
+	public void print_C() 
+    { 
+       System.out.println("Class C"); 
+    }
+}
+
+//-------------------------------------------------------------------------------------
+
+package com.harish;
+
+public class Hierarchical4_Inheritance extends Hierarchical_Inheritance
+{
+	public static void main(String[] args)
+    {
+		Hierarchical2_Inheritance obj_B = new Hierarchical2_Inheritance();
+        obj_B.print_A();
+        obj_B.print_B();
+  
+        Hierarchical3_Inheritance obj_C = new Hierarchical3_Inheritance();
+        obj_C.print_A();
+        obj_C.print_C();
+  
+        Hierarchical4_Inheritance obj_D = new Hierarchical4_Inheritance();
+        obj_D.print_A();
+        obj_D.print_D();
+    }
+    public void print_D() 
+    {
+       System.out.println("Class D");
+    }
+}
+
