@@ -1,0 +1,56 @@
+package com.harish;
+
+public interface Multi_Inherit 
+{
+	public void print_g();
+}
+
+//-----------------------------------------------------------------------
+
+package com.harish;
+
+public interface Multi2_Inherit 
+{
+	public void print_f();
+}
+
+//------------------------------------------------------------------------
+
+package com.harish;
+
+public interface Multi3_Inherit extends Multi2_Inherit, Multi_Inherit
+{
+	public void print_k();
+}
+
+//-------------------------------------------------------------------------
+
+package com.harish;
+
+public class Multi4_Inherit implements Multi3_Inherit
+{
+	public static void main(String[] args)
+    {
+		Multi4_Inherit c = new Multi4_Inherit();
+        c.print_g();
+        c.print_f();
+        c.print_k();
+    }
+    @Override 
+    public void print_g()
+    {
+        System.out.println("Go");
+    }
+    public void print_f() 
+    { 
+        System.out.println("Green"); 
+    }
+	@Override
+	public void print_k() 
+	{
+		System.out.println("Ever");
+		
+	}
+
+}
+
