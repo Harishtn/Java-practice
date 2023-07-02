@@ -1,0 +1,33 @@
+package com.harish;
+
+public class Vehicle_Method_Override 
+{
+	void run()
+	{
+	   System.out.println("Vehicle is running");
+	} 
+}
+
+//------------------------------------------------------------------------------------
+
+package com.harish;
+
+public class Bike_Method_Override extends Vehicle_Method_Override
+{
+	public static void main(String args[])
+	{  
+	     Bike_Method_Override obj = new Bike_Method_Override();   //creating object  
+
+	     obj.run();//calling method  
+	}  
+
+	  //defining the same method as in the parent class 
+
+	void run()
+	{
+	     System.out.println("Bike is running safely");
+	}  
+	  
+}  
+
+
