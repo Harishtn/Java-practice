@@ -1,0 +1,20 @@
+package com.harish;
+
+public class Star
+{
+	public static void main(String[] args) 
+	{
+		Star s=new Star();
+		s.pattern1();
+	}
+	private void pattern1() 
+	{
+		for(int row = 1; row<=3;row++)
+	    {
+			for(int col=1; col<=7; col++)
+			{
+				System.out.print("* ");
+			}
+			System.out.println();
+	    }    		
+	}
