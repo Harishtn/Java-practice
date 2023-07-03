@@ -1,0 +1,32 @@
+public class Star_Square
+{
+	public static void main(String[] args) 
+	{
+		Star_Square sq=new Star_Square();
+		sq.pattern7();		
+	}
+    private void pattern7() 
+	{
+		for(int row = 1; row<=9; row++)
+	    { 
+	        if(row==1 || row==9)
+	        {
+	            for(int col = 1; col<=9; col++)
+	            {
+	                System.out.print("* "); 
+	            }
+	        }
+	        else
+	        {
+	            System.out.print("*"); 
+	            for(int space=1;space<=15; space++)
+	            {
+	              System.out.print(" ");
+	            }
+	            System.out.print("*");
+	        }
+	        System.out.println(); 
+	   }
+		
+	}
+}
