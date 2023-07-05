@@ -1,0 +1,33 @@
+public class Star_Loop 
+{
+
+	public static void main(String[] args)
+	{
+		Star_Loop sl=new Star_Loop();
+		sl.pattern1();
+
+	}
+	private void pattern1() 
+	{
+		
+		for(int p=1;p<=6;p++)
+		{
+			System.out.print("*");
+			for(int space=1;space<=9;space++)
+			{
+				System.out.print(" ");
+			}
+			System.out.println("*");
+			
+		}
+        for(int s=1;s<=7;s++)
+		{
+			if(s==1|| s==7)
+			{
+				System.out.print(" ");
+			}
+			else
+			System.out.print("* ");
+		}
+    }
+}
