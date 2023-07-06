@@ -1,0 +1,30 @@
+public class Star_Loop 
+{
+
+	public static void main(String[] args)
+	{
+		Star_Loop sl=new Star_Loop();
+		sl.pattern_N();
+
+	}
+    private void pattern_N()
+	{
+		for(int line = 1; line<=7;line++)
+	    {
+	        for(int star = 1; star<=7; star++)
+	        {
+	            if(star==1 || star==7 || star==line)
+	            {
+	              System.out.print("* ");
+	            }
+	            else
+	            {
+	              System.out.print("  "); 
+	            }
+	        }
+	        System.out.println(); 
+	    } 
+		
+	}
+
+}
