@@ -1,0 +1,33 @@
+public class LoopingDemo 
+{
+	public static void main(String[] args) 
+	{
+		LoopingDemo ld=new LoopingDemo();
+		ld.pattern_D();
+    }
+    private void pattern_D() 
+	{
+		for(int line=1;line<=7;line++)
+		{
+		    for(int star=1;star<=7;star++)
+		    {
+		        if(line==1 || line==7 || star==2 || star==7)
+		        {
+		        	if(line==1 && star==7 || line==7 && star==7)
+		        	{
+		        		System.out.print(" ");
+		        	}
+		        	else
+		        	{
+		        		System.out.print("* ");
+		        	}
+		        }
+		        else
+		        {
+		        	System.out.print("  ");
+		        }
+		    }
+		    System.out.println();
+		}
+    } 
+}  
