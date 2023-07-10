@@ -1,0 +1,29 @@
+public class LoopingDemo 
+{
+	public static void main(String[] args) 
+	{
+		LoopingDemo ld=new LoopingDemo();
+		ld.pattern_J();
+    }
+    private void pattern_J() 
+	{
+		for(int line=1; line<=7; line++)
+		{
+		     System.out.print("* ");
+		}
+		System.out.println();
+		for(int star=1; star<=7; star++)
+		{
+			 for(int space=1; space<=6; space++)
+		     {
+		        System.out.print(" ");
+		     }
+		     System.out.println("* ");
+		 }	
+		 for(int line=1;line<=3;line++)
+		 {
+			 System.out.print("* ");
+		 }
+		 
+	}	
+}
