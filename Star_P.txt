@@ -1,0 +1,44 @@
+public class LoopingDemo 
+{
+	public static void main(String[] args) 
+	{
+		LoopingDemo ld=new LoopingDemo();
+		ld.pattern_K();
+    }
+    private void pattern_P() 
+	{
+		for(int line=1;line<=9;line++)
+		{
+		    for(int star=1;star<=7;star++)
+		    {
+		    	if(line<=5)
+		    	{
+			    	if(star==1 || line==1 || line==5 || star==7)
+			    	{
+			    		if(line==1 && star==5 || line==5 && star==5)
+			    		{
+			    			System.out.print("");
+			    		}
+			    		else
+			    		{
+			    			System.out.print("* ");
+			    		}
+			    	}
+			    	else
+			    	{
+			    		System.out.print("  ");
+			    	}
+		    	}
+		    	else
+		    	{
+		    		if(star==1)
+		    		{
+		    			System.out.print("* ");
+		    		}
+		    	}
+		    }
+		    System.out.println(" ");
+		}
+	}
+
+}
