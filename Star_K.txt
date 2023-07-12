@@ -1,0 +1,41 @@
+
+public class LoopingDemo 
+{
+	public static void main(String[] args) 
+	{
+		LoopingDemo ld=new LoopingDemo();
+		ld.pattern_D();
+    }
+    private void pattern_K() 
+	{
+		for(int line=1;line<=11;line++)
+		{
+		    for(int star=1;star<=7;star++)
+		    {
+		    	if(line<=6)
+		    	{
+		    		if(star==1 || star==8-line)
+		    		{
+		    			System.out.print("* ");
+		    		}
+		    		else
+		    		{
+		    			System.out.print("  ");
+		    		}
+		    	}
+		    	else
+		    	{
+		    		if(star==1 || star==line-4)
+		    		{
+		    			System.out.print("* ");
+		    		}
+		    		else
+		    		{
+		    			System.out.print("  ");
+		    		}
+		    	}
+		    }
+		    System.out.println();
+		}
+	}
+}
