@@ -1,0 +1,29 @@
+public class Star_Pattern 
+{
+
+	public static void main(String[] args) 
+	{
+		Star_Pattern sp=new Star_Pattern();
+		sp.Pattern8();
+    }
+    private void Pattern8()
+	{
+
+       // 5 
+       // 5 4 
+       // 5 4 3 
+       // 5 4 3 2 
+       // 5 4 3 2 1
+	    for(int num=5;num>=1;num--)
+		{
+		    for(int no=5; no>=num;no--)
+		    {
+		        System.out.print(no+" ");  
+		    }
+		    System.out.println();
+		}
+		
+		
+	}
+
+}
