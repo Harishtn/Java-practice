@@ -1,0 +1,32 @@
+public class ArrayLearning 
+{
+
+	public static void main(String[] args) 
+	{
+		ArrayLearning al=new ArrayLearning();
+		char[] name= {'s','u','b','a'};
+		al.lesson4(name);
+    }
+    private void lesson4(char[] name)
+	{
+//		char shelf=name[0];   
+//		name[0]=name[3];
+//		name[3]=shelf;
+//		shelf=name[1];
+//		name[1]=name[2];
+//		name[2]=shelf;
+//		System.out.println(name);
+			int i=0;
+			int j=name.length-1;
+			while(j>=i)
+			{
+				char shelf=name[i];  
+				name[i]=name[j];
+				name[j]=shelf;
+				i++;
+				j--;
+				
+			}
+			System.out.println(name);
+	 }
+}
