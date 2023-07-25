@@ -1,0 +1,38 @@
+public class ArrayLearning3 
+{
+
+	public static void main(String[] args)
+	{
+		ArrayLearning3 al=new ArrayLearning3();
+	
+		al.find_frequency_letters();
+    }
+    private void find_frequency_letters()
+	{
+		 //Frequency of Each Element in given array:
+		 
+		 // <------- [ Important Program frequency of letters ] ------>
+		 
+		 char[] name = {'p','o','o','v','a','r','a','s','a','n'};
+		 
+		 for( int j =0; j<name.length;j++)
+		 {
+		    char ch = name[j]; 
+		    
+		    if(ch!='*')
+		    {
+		    	int count = 1; 
+		    	
+		    	for(int i=j+1; i<name.length;i++)
+		    	{
+				      if(ch == name[i])
+				      {
+				        name[i] = '*';
+				        count++;
+				      }
+		    	}
+		    	System.out.println(ch + " appears "+ count + " time(s)");  
+		    }
+		 }
+	 }
+}
