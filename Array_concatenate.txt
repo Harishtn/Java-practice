@@ -28,6 +28,5 @@ public class ArrayLearning
 			     System.out.println(total[i]); 
 		     }
 		 }
-		
 	 }
 }
