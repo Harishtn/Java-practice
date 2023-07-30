@@ -1,0 +1,42 @@
+public class ArrayLearning2 
+{
+
+	public static void main(String[] args) 
+	{
+		ArrayLearning2 a = new ArrayLearning2();
+		
+		a.add_array();
+    }
+    private void add_array()
+	 {
+		 int[] ar={5, 12, 7, 1, 2, 9, 3};
+		 //        0  1  2  3  4
+		 //boolean repeated = false; 
+		 boolean result=false;
+		 
+		 for(int j=0;j<ar.length-1;j++)
+		 {
+		     for(int i=j+1;i<ar.length;i++)
+		     {
+		         int num=ar[i]+ar[j];
+		         if(num==10)
+		         {
+		        	 System.out.println(ar[j]+","+ar[i]);
+		        	 System.out.println(num);
+		        	 result=true;
+//		        	 repeated = true; 
+//			         break; 	 
+		        	 
+		         } 
+		     }
+//		     if(repeated == true)
+//		 	 {
+//			      break;
+//		 	 }
+		 }
+		 if(result==false)
+		 {
+			 System.out.println("No case found");
+		 }
+	 }
+}
