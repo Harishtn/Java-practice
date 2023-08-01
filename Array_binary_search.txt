@@ -1,0 +1,41 @@
+public class Sorting 
+{
+
+	public static void main(String[] args) 
+	{
+		Sorting s=new Sorting();
+		
+		int[] ar= {10,8,5,1,-4};
+		
+		s.binary_search(ar);
+
+	}
+	private void binary_search(int[] ar) 
+	{
+		    int key = -4; 
+		    int start = 0, end = ar.length-1; // start = 0 end = 3
+		      
+		    while(start<=end)
+		    {
+			      int mid = (start+end)/2; //mid = 1
+			      if(key == ar[mid])  // 5 == 8 
+			      {
+			        System.out.println("Yes, present at position: "+ mid );
+			        break;
+			      }
+			      else if(key>ar[mid])
+			      {
+			        end = mid - 1; 
+			      }
+			      else 
+			      {
+			        start = mid + 1; 
+			      }
+		    }
+		    if(start>end)
+		    {
+		    	System.out.println("No Match found");
+		    }
+	}
+}
+
