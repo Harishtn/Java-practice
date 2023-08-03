@@ -1,0 +1,37 @@
+public class ArrayLearning2 
+{
+
+	public static void main(String[] args) 
+	{
+		ArrayLearning2 a = new ArrayLearning2();
+		
+		a.first_non_repeated_element();
+    }
+    private void first_non_repeated_element()
+	{
+		 char[] name = {'s','h','r','i','v','a','r','s','h','a','n'};
+		 
+		 for(int j = 0; j<name.length-1; j++) 
+		 {
+		     char ch = name[j]; 
+		     boolean repeated = false;
+		     
+		     for(int i=j+1; i<name.length;i++)
+		     {
+		       if(ch !=name[i])
+		       {
+		         continue; 
+		       }
+		       else
+		       {
+		         repeated = true; 
+		       }
+		     }
+		     if(repeated == false)
+		     {
+		       System.out.println("First Non-repeated character is "+ ch);
+		       break; 
+		     }
+		 } 
+	 }
+}
