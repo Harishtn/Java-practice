@@ -1,0 +1,39 @@
+public class ArrayLearning2 
+{
+
+	public static void main(String[] args) 
+	{
+		ArrayLearning2 a = new ArrayLearning2();
+		
+		a.store_odd_values();
+    }
+    private void store_odd_values()
+	{
+		 // FIND ODD ELEMENTS AND STORE THEM IN ANOTHER ARRAY:
+
+		 int[] a = {10, 20, 30, 15, 25, 35}; 
+		 int count = 0;  
+		 
+		 for(int i =0; i<a.length; i++)
+		 {
+		    if(a[i]%2!=0)
+		    {
+		    	count++; 
+		    }
+		 }
+		 
+		 int j = 0; 
+		 int[] b = new int[count]; 
+		 
+		 for(int i =0; i<a.length; i++)
+		 {
+		     if(a[i]%2!=0)
+		     {
+		         b[j] = a[i]; 
+		         System.out.println("The new array b[j] " +b[j]);
+		         j++; 
+		     }
+		 }
+		 
+	 }
+}
