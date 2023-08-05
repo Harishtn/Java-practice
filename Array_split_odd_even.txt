@@ -23,7 +23,6 @@ public class ArrayLearning2
 		    {
 		    	count1++;
 		    }
-		    
 		 }
 		 int j = 0; 
 		 int[] b = new int[count]; 
