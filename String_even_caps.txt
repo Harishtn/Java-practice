@@ -1,0 +1,24 @@
+public class StringLearning 
+{
+    public static void main(String[] args)
+    {
+		StringLearning sl=new StringLearning();
+		
+        sl.even_caps("harish");
+    }
+    private void even_caps(String s1) 
+    {
+		for(int i=0;i<s1.length();i++) 
+		  {
+		      if(i%2==0) 
+		      {
+		        System.out.print((char)(s1.charAt(i)-32));
+		      }
+		      else
+		      {
+		        System.out.print(s1.charAt(i));
+		      }
+		  }
+		
+    }
+}
