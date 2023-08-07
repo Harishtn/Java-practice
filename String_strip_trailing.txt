@@ -1,0 +1,40 @@
+public class StringLearning 
+{
+    public static void main(String[] args)
+    {
+		StringLearning sl=new StringLearning();
+		
+        sl.strip_trailing();  
+    }
+    private static void strip_trailing() 
+	{
+		 String s = "h el lo  ";
+		    
+		 boolean first_letter = false; //false
+		    
+		 String output = ""; 
+		    
+		 for(int i=s.length()-1; i>=0;i--)
+		 {
+		    if(s.charAt(i)!=' ') 
+		    {
+		      output = output + s.charAt(i); //h
+		      first_letter = true;  //true
+		    }
+		    else if(first_letter==true)
+		    {
+		        output = output + s.charAt(i);//h 
+		    }
+		 }
+		 System.out.println(s);
+		 System.out.println(output);
+		    
+		 String result="";
+		 for(int i=output.length()-1; i>=0; i--)
+		 {
+		     result = result + output.charAt(i);  
+		 }
+		 System.out.println("Output --> "+ result);
+		      
+	}
+}
