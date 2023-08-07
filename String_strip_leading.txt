@@ -1,0 +1,33 @@
+public class StringLearning 
+{
+    public static void main(String[] args)
+    {
+		StringLearning sl=new StringLearning();
+		
+        sl.strip_leading();  
+    }
+    private static void strip_leading()
+	{
+	   
+	    String s = "   h el lo";
+	    
+	    boolean first_letter = false; //false
+	    
+	    String output = ""; 
+	    
+	    for(int i=0; i<s.length();i++)
+	    {
+	      if(s.charAt(i)!=' ') 
+	      {
+		      output = output + s.charAt(i); //h
+		      first_letter = true;  //true
+	      }
+	      else if(first_letter==true)
+	      {
+	    	  output = output + s.charAt(i);//h 
+	      }
+	    }
+	    System.out.println(s);
+	    System.out.println(output);
+	    
+    }
