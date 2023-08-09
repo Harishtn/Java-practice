@@ -1,0 +1,46 @@
+public class StringLearning 
+{
+    public static void main(String[] args)
+    {
+		StringLearning sl=new StringLearning();
+		
+        sl.string_reverse();  // IMPORTANT INTERVIEW PROGRAM:
+    }
+    private void string_reverse() 
+	{
+		 //	<------------  IMPORTANT INTERVIEW PROGRAM  -------------->
+		
+		    String s1 = "Today is Wednesday Tomorrow is Thursday";
+		    
+		    String s2 = ""; 
+		    
+		    System.out.println("s1 --> " + s1);
+		    
+		    for(int i=s1.length()-1;i>=0;i--)
+		    {
+		      if(s1.charAt(i)!= ' ') 
+		      {
+		        s2 = s2 + s1.charAt(i);   //YNNAD
+		      }
+		      else
+		      {
+		        reverse(s2);    //reverse("YNNAD");
+		        s2 = ""; 
+		        continue; 
+		      }
+		    }
+		    reverse(s2);
+		    //System.out.println("s2 --> " + s2);
+   }
+   private  void reverse(String s2) 
+   { 
+	    int String3 = "";
+		for(int i=s2.length()-1; i>=0; i--)
+		{
+		    s3 = s3 + s2.charAt(i);  //BENI DANNY
+		}
+		s3 = s3+" ";
+		System.out.println("s3 --> "+ s3);
+	    
+   }
+}
