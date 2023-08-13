@@ -1,0 +1,60 @@
+public class TwoDimensionalArray2 
+{
+
+	public static void main(String[] args)
+	{
+		TwoDimensionalArray2 t2 = new TwoDimensionalArray2();
+		
+		t2.two_d_spiral_array();
+
+	}
+    private void two_d_spiral_array()
+	{
+		  int[][] c = new int[4][4];
+		  
+		  int minRow = 0,  maxRow = 3; 
+		  int minCol = 0,  maxCol = 3; 
+		  
+		  int no = 1; 
+		  
+		  while(no<=16)   //16 
+		  {
+			  for(int col = minCol; col<=maxCol; col++)
+			  {
+				  c[minRow][col] = no; 
+				  no++;
+			  }  
+			  minRow++;	  //minRow = 1  maxRow = 3
+	
+			  for(int row=minRow;row<=maxRow;row++)
+			  {
+				  c[row][maxCol] = no; 
+				  no++;
+			  }
+			  maxCol--;  //minCol = 0, maxCol = 2
+	
+			  for(int col=maxCol; col>=minCol;col--)
+			  {
+				  c[maxRow][col] = no; 
+				  no++;
+			  }
+			  maxRow--;  // minRow = 1 maxRow = 2
+			  
+			  for(int row = maxRow; row>=minRow;row--)
+			  {
+				  c[row][minCol] = no; 
+				  no++;
+			  }
+			  minCol++;
+		  }
+		  
+		  for(int i=0; i<4; i++)
+		  {
+		    for(int j=0; j<4; j++)
+		    {
+		      System.out.print(c[i][j]+"   ");
+		    }
+		    System.out.println();
+		  }	
+	}
+}
