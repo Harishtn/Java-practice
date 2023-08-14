@@ -1,0 +1,31 @@
+public class RecursionDemo 
+{
+
+	public static void main(String[] args) 
+	{
+		RecursionDemo r = new RecursionDemo();
+		
+		//r.display(1);
+		
+//		int result = r.fact(4);
+//		System.out.println(result);
+		
+	}
+	private void display(int no) 
+	{
+		System.out.println(no);
+		no++;
+		if(no<=5)
+		{
+			display(no);
+		}
+	}
+	private int fact(int no) 
+	{
+		if(no==1)
+		      return 1; 
+		    return no * fact(no-1);
+	}
+
+}
+
