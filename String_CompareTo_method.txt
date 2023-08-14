@@ -1,0 +1,24 @@
+public class CompareToDemo 
+{
+
+	public static void main(String[] args) 
+	{
+		String s1 = "abc";
+		String s2 = "abcd";
+		System.out.println(s1.compareTo(s2));
+		//result -1
+
+		s1 = "abcd";  //abcd --> abc 
+		s2 = "abc";             
+		System.out.println(s1.compareTo(s2));
+		//result 1
+		
+		s1 = "abcd";
+		s2 = "abcd";
+		System.out.println(s1.compareTo(s2));
+		//result 0
+
+	}
+
+}
+
