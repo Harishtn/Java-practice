@@ -1,0 +1,53 @@
+
+import java.time.DateTimeException;
+
+import java.time.LocalDate;
+
+import java.time.Period;
+
+import java.util.Scanner;
+
+public class AgeCalculator 
+{
+
+	public static void main(String[] args) 
+	{
+		  
+		System.out.print("Enter date of birth in YYYY-MM-DD format: ");  
+	
+		Scanner scanner = new Scanner(System.in);  
+		 
+		String input = scanner.nextLine();  
+		scanner.close();  
+		
+		try
+		{
+			LocalDate dob = LocalDate.parse(input); 
+			AgeCalculator.calculateAge(dob);
+		}
+		catch(DateTimeException d)
+		{
+			System.out.println("Enter correct format");
+			
+		}	
+	}
+	static void calculateAge(LocalDate dob)
+	{
+		LocalDate curDate = LocalDate.now();  
+		
+		if (dob.isBefore(curDate))   
+		{  
+			System.out.println( Period.between(dob, curDate).getYears() + " years"); 
+			System.out.println( Period.between(dob, curDate).getMonths() + " Months");
+			System.out.println( Period.between(dob, curDate).getDays()+" Days");	
+		}  
+		else  
+		{  
+			System.out.println("Please enter correct DOB");
+		}  
+	}  
+		
+}
+
+
+
