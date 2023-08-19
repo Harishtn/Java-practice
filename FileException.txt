@@ -1,0 +1,49 @@
+import java.io.File;
+
+import java.io.IOException;
+
+public class FileException 
+{
+
+	public static void main(String[] args)
+	{
+		FileException fe = new FileException();
+		fe.learn_file();
+
+	}
+	private void learn_file() 
+	{
+	    
+		//File ff = new File("/home/harish/Desktop/Harish.txt");
+//		
+//	    try 
+//	    {
+//			// For file creation only we use try block otherwise we don't use it //
+//		  
+//        System.out.println(ff.createNewFile());  //ff.createNewFile();
+//	     
+//	    } 
+//	    catch (IOException e) 
+//	    {
+//	      e.printStackTrace();
+//	    }
+		
+		
+		//System.out.println(ff.delete());     //ff.delete();
+	
+		
+		//System.out.println(ff.exists());    //ff.exists();
+		
+		
+		//File ff = new File("/home/harish/Desktop/Amma");
+		
+		//System.out.println(ff.mkdir());     //ff.mkdir(); --> Folder Creation
+	
+			
+		//File ff = new File("/home/harish/Desktop/Leader/Gandhi");
+		
+		//System.out.println(ff.mkdirs());   //ff.mkdirs(); --> Sub-Folder Creation
+		
+	}
+}
+
