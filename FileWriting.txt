@@ -1,0 +1,54 @@
+
+import java.io.BufferedWriter;
+
+import java.io.File;
+
+import java.io.FileWriter;
+
+import java.io.IOException;
+
+public class FileWriting 
+{
+
+	public static void main(String[] args) 
+	{
+		FileWriting f = new FileWriting();
+		f.write();
+
+	}
+	private void write() 
+	{
+		File ff = new File("/home/harish/Desktop/Family.txt");
+		
+		try 
+	    {
+			ff.createNewFile();
+			
+			FileWriter writer = new FileWriter(ff);	
+			
+//			System.out.println(ff.getAbsolutePath()); //file location
+			
+//			writer.append('t');
+//			writer.append(" Nirmala\n");
+//			writer.append(" Logesh\n");
+//			writer.close();
+			
+		
+			BufferedWriter bufWriter  = new BufferedWriter(writer);	
+			bufWriter.append("Surya");
+			bufWriter.append(" Sachin");
+			bufWriter.newLine();
+			bufWriter.append("Vikram");
+			
+			bufWriter.flush();
+			bufWriter.close();
+	    } 
+	    catch (IOException e) 
+	    {
+	      e.printStackTrace();
+	    }
+			
+	}
+
+}
+
