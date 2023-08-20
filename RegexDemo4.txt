@@ -1,0 +1,38 @@
+import java.util.regex.Matcher;
+
+import java.util.regex.Pattern;
+
+public class RegexDemo4 
+{
+
+	public static void main(String[] args) 
+	{
+//		String password = "Chennai 600001";
+//	    Pattern patternObj = Pattern.compile("[a-zA-Z]"); // only characters
+	    
+//	    String password = "Chennai :-600001";
+//	    Pattern patternObj = Pattern.compile("[a-zA-Z0-9]"); // remove special characters
+
+//	    String password = "Chennai :-600001";
+//	    Pattern patternObj = Pattern.compile("[^a-zA-Z0-9]"); // negotion
+		
+//		Matcher matcherObj = patternObj.matcher(password);
+		
+		
+//		String mobile = "9884012810";
+//		Pattern patternObj = Pattern.compile("(0|91)?[0-9]{9}");
+//	    Matcher matcherObj = patternObj.matcher(mobile);
+		
+		String pattern = "a+";
+	    String input = "fafafafaffaaffaafafafafa";
+	    Pattern patternObj = Pattern.compile(pattern);
+	    Matcher matcherObj =  patternObj.matcher(input);
+	    
+	    while(matcherObj.find())
+	    {
+	        System.out.print(matcherObj.group());
+	    }
+	}
+
+}
+
