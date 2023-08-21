@@ -1,0 +1,90 @@
+import java.io.File;
+
+public class FileDemo 
+{
+
+	public static void main(String[] args) 
+	{
+		FileDemo fd = new FileDemo();
+		
+		//fd.list_files();
+		
+		//fd.list_files_for_each();
+		
+		//fd.file_pdf();
+		
+		//fd.is_directory();
+		
+		//fd.is_files();
+	}
+	
+	File ff = new File("//home//harish//Desktop");
+
+	private void list_files() 
+	{
+		 String[] st  =    ff.list();
+		 for(int i=0; i<st.length;i++)
+		 {
+		   System.out.println(st[i]);
+		 }
+		 
+	}
+	private void list_files_for_each() 
+	{
+		String[] st  =    ff.list();
+		// for(int i=0; i<st.length;i++)
+		// {
+		//   System.out.println(st[i]);
+		// }
+		 //for each String abcd in String array st
+		 for(String abcd:st)
+		 {
+		   System.out.println(abcd);
+		 }
+		
+	}
+	private void file_pdf() 
+	{
+		String[] files_folders = ff.list();
+		for(int i=0; i<files_folders.length;i++)
+		{
+		  String st = files_folders[i];
+		  
+		  if(st.endsWith(".txt"))
+		  {
+		    System.out.println(st);
+		  }
+		}
+	}
+	private void is_directory() 
+	{
+		File[] files_folders = ff.listFiles();
+		for(int i=0; i<files_folders.length;i++)
+		{
+		  File file_folder = files_folders[i];
+		  
+		  if(file_folder.isDirectory())
+		  {
+			  System.out.println(file_folder);  
+		  }
+		}	
+	}
+	private void is_files() 
+	{
+		File[] files_folders = ff.listFiles();
+		for(int i=0; i<files_folders.length;i++)
+		{
+		  File file_folder = files_folders[i];
+		  
+		  if(file_folder.isFile())
+		  {
+			  System.out.println(file_folder);  
+		  }
+		}	
+	}
+	
+	
+}
+
+
+
