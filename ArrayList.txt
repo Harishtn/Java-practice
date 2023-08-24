@@ -1,0 +1,54 @@
+import java.util.ArrayList;
+
+import java.util.List;
+
+public class ArrayListDemo 
+{
+
+	public static void main(String[] args) 
+	{
+		ArrayList al = new ArrayList(); // Array --> Growable Array
+		
+	    al.add("hi");
+	    al.add(5);
+	    al.add(true);
+	    al.add(10.4f);
+	    al.add('c');
+	    System.out.println(al);
+	    
+	    al.add(2, "Hari");
+	    al.add(2, "Hari");
+	    System.out.println(al);
+	    
+	    
+	    ArrayList al2 = new ArrayList(); 
+	    
+	    al2.add(100);  	// It will return boolean
+	    al2.add(200);
+	    al2.add(300);  
+	    
+	    al2.addAll(2,al); 	// It will return boolean
+	    System.out.println(al2);
+	    
+	    System.out.println(al2.size()); // It will return integer
+	    
+	    System.out.println(al2.contains("Hari")); // It will return boolean
+	    
+	    System.out.println(al2.containsAll(al)); // It will return boolean
+	    
+	    System.out.println(al2.get(5)); // It will return object
+	    
+	    System.out.println(al2.indexOf("Hari")); // It will return integer
+	    
+	    List ll  = al2.subList(3, 7); // 3 to 6  // It will return list
+	    System.out.println(ll);
+	    
+	    System.out.println(al2.remove("Hari")); // It will return boolean
+	    System.out.println(al2);
+	    
+	    
+	    
+	}
+
+}
+
