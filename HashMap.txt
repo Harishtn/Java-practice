@@ -70,5 +70,4 @@ public class HashMapDemo
 	    System.out.println(name + " scored highest " + big);
 	        
 	}
-
 }
