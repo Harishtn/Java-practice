@@ -1,0 +1,104 @@
+// To get the mobile in Alphabetical Order 
+
+// To get the mobiles in Ascending Order
+
+
+public class CollectionMobileTask implements Comparable
+{
+	String brand; 
+	int price; 
+	
+	public CollectionMobileTask(String brand, int price)
+	{
+	    this.brand = brand;
+	    this.price = price;
+	}
+	
+	public String toString()
+	{
+	    return this.brand + " "+ this.price; 
+	}
+
+	@Override
+	public int compareTo(Object o) 
+	{
+
+          //To get the mobiles in Ascending Order:
+
+//		  int price2 = this.price; 
+//		  
+//		  CollectionMobileTask m1 = (CollectionMobileTask) o;
+//		  
+//		  int price1 = m1.price; 
+//		  
+//		  if(price1>price2)
+//		      return -10; 
+//		  else if (price1<price2)
+//		      return 10; 
+//		  return 0;
+
+
+          //To get the mobiles in Alphabetical Order:
+		  
+		  String brand2 = this.brand; 
+		  
+		  CollectionMobileTask m1 = (CollectionMobileTask) o;
+		  
+		  String brand1 = m1.brand; 
+		  
+		  int result = brand1.compareTo(brand2); 
+		  
+		  if(result>0)
+		      return -10; 
+		  else if (result<0)
+		      return 10; 
+		  return 0;
+	}
+
+}
+
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+import java.util.ArrayList;
+
+import java.util.Collections;
+
+public class CollectionArrayListTask 
+{
+
+	public static void main(String[] args) 
+	{
+		CollectionMobileTask m1 = new CollectionMobileTask("Sony", 15000);
+		CollectionMobileTask m2 = new CollectionMobileTask("IPhone", 18000);
+		CollectionMobileTask m3 = new CollectionMobileTask("Vivo", 12000);
+		CollectionMobileTask m4 = new CollectionMobileTask("Samsung", 25000);
+		
+		ArrayList mobiles = new ArrayList();
+		mobiles.add(m1);
+		mobiles.add(m2);
+		mobiles.add(m3);
+		mobiles.add(m4);
+		
+//		System.out.println(mobiles);
+		
+//		for(Object ob: mobiles)
+//	    {
+//		  // Type casting: Down casting
+//		  CollectionMobileTask mobile = (CollectionMobileTask)ob;
+//		  
+//		  if(mobile.price>15000)
+//	      System.out.println(ob);
+//	    }
+	    
+	    Collections.sort(mobiles);
+	    
+	    System.out.println(mobiles);
+
+	}
+
+}
+
+
