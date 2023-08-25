@@ -1,0 +1,33 @@
+import java.util.LinkedHashMap;
+
+import java.util.TreeMap;
+
+public class TreeMapDemo 
+{
+
+	public static void main(String[] args) 
+	{
+		TreeMap hm = new TreeMap(); 
+		
+	    hm.put("virat", 45);
+	    hm.put("dhoni", 55);
+	    hm.put("rohit", 85);
+	    hm.put("dhawan", 50);
+	    hm.put("kapil", 70);
+	    hm.put("rohit", 91);
+	    hm.put("rohit", 100);
+	    
+//	    System.out.println(hm.keySet());
+	    
+//	    System.out.println(hm.values());
+	    
+//	    System.out.println(hm);
+
+//	    System.out.println(hm.get("rohit"));
+	    
+//	    System.out.println(hm.entrySet());
+	    
+
+	}
+
+}
