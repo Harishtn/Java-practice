@@ -1,0 +1,59 @@
+// Add 10 mobile objects to a Collection and remove all mobile object whose price is greater than 15000.
+
+
+public class CollectionMobileTask
+{
+	String brand; 
+	int price; 
+	
+	public CollectionMobileTask(String brand, int price)
+	{
+	    this.brand = brand;
+	    this.price = price;
+	}
+	
+	public String toString()
+	{
+	    return this.brand + " "+ this.price; 
+	}
+
+}
+
+
+//------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+import java.util.ArrayList;
+
+public class CollectionArrayListTask 
+{
+
+	public static void main(String[] args) 
+	{
+		CollectionMobileTask m1 = new CollectionMobileTask("Sony", 15000);
+		CollectionMobileTask m2 = new CollectionMobileTask("iPhone", 18000);
+		CollectionMobileTask m3 = new CollectionMobileTask("Vivo", 12000);
+		CollectionMobileTask m4 = new CollectionMobileTask("Samsung", 25000);
+		
+		ArrayList mobiles = new ArrayList();
+		mobiles.add(m1);
+		mobiles.add(m2);
+		mobiles.add(m3);
+		mobiles.add(m4);
+		
+		System.out.println(mobiles);
+		
+		for(Object ob: mobiles)
+	    {
+		  // Type casting: Down casting
+		  CollectionMobileTask mobile = (CollectionMobileTask)ob;
+		  
+		  if(mobile.price>15000)
+	      System.out.println(ob);
+	    }
+
+	}
+
+}
+
