@@ -1,0 +1,34 @@
+// Find when the random method in math class giving duplicate value
+
+
+import java.util.ArrayList;
+
+import java.util.Collections;
+
+import java.util.HashSet;
+
+public class CollectionTasks
+{
+
+	public static void main(String[] args) 
+	{
+		CollectionTasks ct = new CollectionTasks();
+		
+		ct.program7();
+    }
+    private void program7() 
+	{
+		HashSet hs = new HashSet(); 
+	    while(true) 
+	    {
+		    double d = Math.random();
+		    int no = (int) (d * 100); 
+		    boolean added = hs.add(no);
+		    
+		    if(added == false)
+		      break; 
+	    }
+	    System.out.println(hs);
+		
+	}
+}
