@@ -1,0 +1,26 @@
+public class AssignmentLoop 
+{
+
+	public static void main(String[] args) 
+	{
+		AssignmentLoop aa = new AssignmentLoop();
+	    
+	    aa.print_four();
+	     
+	}
+    private void print_four() 
+	{
+
+        // 2 power 2, 2 power 3, 2 power 4
+
+		int no= 2;
+		
+		int result =2;
+		
+		for(int i=2;i<=5;i++)
+		{
+			result=result*no;
+			System.out.println("2^"+i+" = "+result);
+		}	
+	}
+}
