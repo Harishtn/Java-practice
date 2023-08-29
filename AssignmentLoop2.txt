@@ -1,0 +1,31 @@
+public class AssignmentLoop 
+{
+
+	public static void main(String[] args) 
+	{
+		AssignmentLoop aa = new AssignmentLoop();
+	    
+	    aa.print_two();
+	     
+	}
+    private void print_two() 
+	{
+
+        // 5 10 15 25 
+        // 4 8  12 16
+	    boolean first=true;
+	    int no1=5;
+	       
+	    for(int i=1; i<=5; i++) 
+	    {
+	       System.out.print(i*no1+" ");
+	         
+	       if(i==5 && first==true)
+	       {
+	           no1=4;
+	           i=0;
+	           first=false;
+	       }
+	     }
+	}
+}
