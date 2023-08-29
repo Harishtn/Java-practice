@@ -1,0 +1,35 @@
+public class AssignmentLoop 
+{
+
+	public static void main(String[] args) 
+	{
+		AssignmentLoop aa = new AssignmentLoop();
+	    
+	    aa.print_three();
+	     
+	}
+    private void print_three() 
+	{
+        //Fibonacci series from 5 to 80
+
+	    //without using third variable
+
+        
+		int a = 0, b = 1, c = 0;
+
+	    System.out.println("Fibonacci series between 5 and 80:");
+	          
+	    while (c <= 80) 
+	    {
+	       c = a + b;
+	       
+	       if (c >= 5 && c <= 80) 
+	       {
+	          System.out.println(c);
+	       }
+	       a = b;
+	       b = c;
+	    }
+	}
+}
+    
