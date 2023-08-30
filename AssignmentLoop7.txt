@@ -1,0 +1,26 @@
+public class AssignmentLoop 
+{
+
+	public static void main(String[] args) 
+	{
+		AssignmentLoop aa = new AssignmentLoop();
+	    
+	    aa.print_seven();
+	     
+	}
+    private void print_seven() 
+	{
+
+        // Printing numbers which contains 5 in it from 1 to 100
+
+        // For Example : 5 15 25 35 45 50 51 52 ........ 95
+
+		for (int no = 1; no <=100; no++)
+        {
+            if (no%10 == 5 || no/10==5) 
+            {
+                System.out.println(no);
+            }
+        }	
+	}
+}
