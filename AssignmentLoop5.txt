@@ -1,0 +1,31 @@
+public class AssignmentLoop 
+{
+
+	public static void main(String[] args) 
+	{
+		AssignmentLoop aa = new AssignmentLoop();
+	    
+	    aa.print_five();
+	     
+	}
+    private void print_five() 
+	{
+		//120 24 6  2  1 
+
+		//5!  4! 3! 2! 1!
+
+		int no=5;
+		
+		while(no>0)
+		{
+			int fact =1;
+			for(int i=no;i>0;i--)
+			{
+				fact = fact*i;
+			}
+			System.out.println(fact);
+			no--;
+		}	
+	}
+}
+    
