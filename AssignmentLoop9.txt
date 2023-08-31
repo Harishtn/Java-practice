@@ -1,0 +1,41 @@
+public class AssignmentLoop 
+{
+
+	public static void main(String[] args) 
+	{
+		AssignmentLoop aa = new AssignmentLoop();
+	    
+	    aa.print_nine();
+	     
+	}
+    private void print_nine() 
+	{
+
+        // Taking the divisors of 100 and printing only the prime divisors of it
+
+		int no=100;
+	    int div=2;
+	    
+	    while(div<=no/2)
+	    {
+		      if(no%div==0)
+		      {
+		          int count=0;
+		          for(int i=2;i<=div/2;i++)
+		          {      
+		            if(div%i==0)
+		            {
+		              System.out.println(div+" is  not prime number"); 
+		              count =1;
+		              break;      
+		            }  
+		          }
+		          if(count == 0)  
+		          { 
+		        	  System.out.println(div+" is prime number"); 
+		          }  
+		      }
+		      div++;
+		  }
+	}
+}
