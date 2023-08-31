@@ -1,0 +1,40 @@
+public class AssignmentLoop 
+{
+
+	public static void main(String[] args) 
+	{
+		AssignmentLoop aa = new AssignmentLoop();
+	    
+	    aa.print_ten();
+	     
+	}
+    private void print_ten() 
+	{
+
+         //Finding the LCM and GCD of given numbers
+
+		 int no1=100;
+		 int no2=200;
+		 int smallest =0;
+		 int greatest=0;
+		 boolean smallFound =false;
+		    
+		 int div=2;
+		 while(div<=no1/2)
+		 {
+		     if(no1%div==0&&no2%div==0)
+		     {
+		        if(smallFound==false)
+		        {
+		            smallest=div;
+		            smallFound=true;
+		        }
+		        greatest = div; 
+		     }
+		     div =div+1;
+		  }
+		  System.out.println("Smallest common Divisor of "+no1+" "+no2+" is :"+smallest);
+		  System.out.println("Greatest common Divisor of "+no1+" "+no2+" is :"+greatest);
+	 }
+	
+}
